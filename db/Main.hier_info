@@ -10,16 +10,27 @@ MUX_inData[4] => MUX_inData[4].IN1
 MUX_inData[5] => MUX_inData[5].IN1
 MUX_inData[6] => MUX_inData[6].IN1
 MUX_inData[7] => MUX_inData[7].IN1
-MUX_outData <= MUX:mux.outData
+MUX_outData << MUX:mux.outData
 DMX_inData => DMX_inData.IN1
-DMX_outData[0] <= DMX:dmx.outData
-DMX_outData[1] <= DMX:dmx.outData
-DMX_outData[2] <= DMX:dmx.outData
-DMX_outData[3] <= DMX:dmx.outData
-DMX_outData[4] <= DMX:dmx.outData
-DMX_outData[5] <= DMX:dmx.outData
-DMX_outData[6] <= DMX:dmx.outData
-DMX_outData[7] <= DMX:dmx.outData
+DMX_outData[0] << DMX:dmx.outData
+DMX_outData[1] << DMX:dmx.outData
+DMX_outData[2] << DMX:dmx.outData
+DMX_outData[3] << DMX:dmx.outData
+DMX_outData[4] << DMX:dmx.outData
+DMX_outData[5] << DMX:dmx.outData
+DMX_outData[6] << DMX:dmx.outData
+DMX_outData[7] << DMX:dmx.outData
+CD_inData[0] => CD_inData[0].IN1
+CD_inData[1] => CD_inData[1].IN1
+CD_inData[2] => CD_inData[2].IN1
+CD_inData[3] => CD_inData[3].IN1
+CD_inData[4] => CD_inData[4].IN1
+CD_inData[5] => CD_inData[5].IN1
+CD_inData[6] => CD_inData[6].IN1
+CD_inData[7] => CD_inData[7].IN1
+CD_outData[0] << CD:cd.outData
+CD_outData[1] << CD:cd.outData
+CD_outData[2] << CD:cd.outData
 
 
 |Main|MUX:mux
@@ -65,5 +76,19 @@ outData[4] <= outData.DB_MAX_OUTPUT_PORT_TYPE
 outData[5] <= outData.DB_MAX_OUTPUT_PORT_TYPE
 outData[6] <= outData.DB_MAX_OUTPUT_PORT_TYPE
 outData[7] <= outData.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|CD:cd
+inData[0] => Decoder0.IN7
+inData[1] => Decoder0.IN6
+inData[2] => Decoder0.IN5
+inData[3] => Decoder0.IN4
+inData[4] => Decoder0.IN3
+inData[5] => Decoder0.IN2
+inData[6] => Decoder0.IN1
+inData[7] => Decoder0.IN0
+outData[0] <= outData[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+outData[1] <= outData[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+outData[2] <= outData[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -8,7 +8,11 @@ output			MUX_outData,
 
 //Сигнальные выводы демультиплексора 
 input				DMX_inData,
-output	[7:0]	DMX_outData
+output	[7:0]	DMX_outData,
+
+//Сигнальные выводы шифратора 
+input		[7:0]	CD_inData,
+output	[2:0]	CD_outData
 
 );
 
@@ -22,6 +26,11 @@ DMX dmx(
 	.addr(addr),
 	.inData(DMX_inData),
 	.outData(DMX_outData)
+);
+
+CD cd(
+	.inData(CD_inData),
+	.outData(CD_outData)
 );
 
 endmodule

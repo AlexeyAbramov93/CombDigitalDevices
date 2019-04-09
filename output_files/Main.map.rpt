@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Main
-Tue Apr 09 18:11:10 2019
+Tue Apr 09 19:38:45 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,10 +13,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +43,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 09 18:11:10 2019       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 09 19:38:45 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Main                                        ;
 ; Top-level Entity Name              ; Main                                        ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 13                                          ;
-;     Total combinational functions  ; 13                                          ;
+; Total logic elements               ; 29                                          ;
+;     Total combinational functions  ; 29                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 21                                          ;
+; Total pins                         ; 32                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -156,10 +157,11 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -171,6 +173,7 @@ refer to the applicable agreement for further details.
 ; Main.v                           ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/Main.v    ;         ;
 ; src/MUX.v                        ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/MUX.v ;         ;
 ; src/DMX.v                        ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/DMX.v ;         ;
+; src/CD.v                         ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/CD.v  ;         ;
 +----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
 
 
@@ -179,30 +182,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 13            ;
+; Estimated Total logic elements              ; 29            ;
 ;                                             ;               ;
-; Total combinational functions               ; 13            ;
+; Total combinational functions               ; 29            ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 12            ;
-;     -- 3 input functions                    ; 1             ;
-;     -- <=2 input functions                  ; 0             ;
+;     -- 4 input functions                    ; 23            ;
+;     -- 3 input functions                    ; 4             ;
+;     -- <=2 input functions                  ; 2             ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 13            ;
+;     -- normal mode                          ; 29            ;
 ;     -- arithmetic mode                      ; 0             ;
 ;                                             ;               ;
 ; Total registers                             ; 0             ;
 ;     -- Dedicated logic registers            ; 0             ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 21            ;
+; I/O pins                                    ; 32            ;
 ;                                             ;               ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; addr[0]~input ;
 ; Maximum fan-out                             ; 11            ;
-; Total fan-out                               ; 81            ;
-; Average fan-out                             ; 1.47          ;
+; Total fan-out                               ; 152           ;
+; Average fan-out                             ; 1.63          ;
 +---------------------------------------------+---------------+
 
 
@@ -211,11 +214,25 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |Main                      ; 13 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 21   ; 0            ; 0          ; |Main               ; Main        ; work         ;
+; |Main                      ; 29 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 32   ; 0            ; 0          ; |Main               ; Main        ; work         ;
+;    |CD:cd|                 ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|CD:cd         ; CD          ; work         ;
 ;    |DMX:dmx|               ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|DMX:dmx       ; DMX         ; work         ;
 ;    |MUX:mux|               ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|MUX:mux       ; MUX         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; CD:cd|outData[0]                                   ; CD:cd|WideOr0       ; yes                    ;
+; CD:cd|outData[1]                                   ; CD:cd|WideOr0       ; yes                    ;
+; CD:cd|outData[2]                                   ; CD:cd|WideOr0       ; yes                    ;
+; Number of user-specified and inferred latches = 3  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -238,14 +255,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 21                          ;
-; cycloneiii_lcell_comb ; 13                          ;
-;     normal            ; 13                          ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 12                          ;
+; boundary_port         ; 32                          ;
+; cycloneiii_lcell_comb ; 29                          ;
+;     normal            ; 29                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 23                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.04                        ;
+; Average LUT depth     ; 2.42                        ;
 +-----------------------+-----------------------------+
 
 
@@ -264,7 +282,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Apr 09 18:10:29 2019
+    Info: Processing started: Tue Apr 09 19:37:59 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CombDigitalDevices -c Main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -275,20 +293,36 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/mux
     Info (12023): Found entity 1: MUX File: E:/projects/Laba1/CombDigitalDevices/src/MUX.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file src/dmx.v
     Info (12023): Found entity 1: DMX File: E:/projects/Laba1/CombDigitalDevices/src/DMX.v Line: 6
+Warning (12019): Can't analyze file -- file DC.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file src/cd.v
+    Info (12023): Found entity 1: CD File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 10
 Info (12127): Elaborating entity "Main" for the top level hierarchy
-Info (12128): Elaborating entity "MUX" for hierarchy "MUX:mux" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 19
-Info (12128): Elaborating entity "DMX" for hierarchy "DMX:dmx" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 25
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:mux" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 23
+Info (12128): Elaborating entity "DMX" for hierarchy "DMX:dmx" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 29
+Info (12128): Elaborating entity "CD" for hierarchy "CD:cd" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 34
+Warning (10270): Verilog HDL Case Statement warning at CD.v(22): incomplete case statement has no default case item File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 22
+Info (10264): Verilog HDL Case Statement information at CD.v(22): all case item expressions in this case statement are onehot File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 22
+Warning (10240): Verilog HDL Always Construct warning at CD.v(20): inferring latch(es) for variable "outData", which holds its previous value in one or more paths through the always construct File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 20
+Info (10041): Inferred latch for "outData[0]" at CD.v(20) File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 20
+Info (10041): Inferred latch for "outData[1]" at CD.v(20) File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 20
+Info (10041): Inferred latch for "outData[2]" at CD.v(20) File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 20
+Warning (13012): Latch CD:cd|outData[0] has unsafe behavior File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CD_inData[1] File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 14
+Warning (13012): Latch CD:cd|outData[1] has unsafe behavior File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CD_inData[2] File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 14
+Warning (13012): Latch CD:cd|outData[2] has unsafe behavior File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CD_inData[4] File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 13 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 617 megabytes
-    Info: Processing ended: Tue Apr 09 18:11:10 2019
-    Info: Elapsed time: 00:00:41
-    Info: Total CPU time (on all processors): 00:01:12
+Info (21057): Implemented 61 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 20 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 29 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 629 megabytes
+    Info: Processing ended: Tue Apr 09 19:38:45 2019
+    Info: Elapsed time: 00:00:46
+    Info: Total CPU time (on all processors): 00:01:23
 
 
