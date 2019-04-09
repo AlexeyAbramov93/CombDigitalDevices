@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Main
-Tue Apr 09 21:07:02 2019
+Wed Apr 10 00:33:31 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -15,9 +15,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. User-Specified and Inferred Latches
   9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+ 10. Port Connectivity Checks: "FullAdder:adder_bit0"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +44,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 09 21:07:02 2019       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 10 00:33:30 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Main                                        ;
 ; Top-level Entity Name              ; Main                                        ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 37                                          ;
-;     Total combinational functions  ; 37                                          ;
+; Total logic elements               ; 39                                          ;
+;     Total combinational functions  ; 39                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 43                                          ;
+; Total pins                         ; 50                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -165,17 +166,18 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                 ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                   ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
-; Main.v                           ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/Main.v    ;         ;
-; src/MUX.v                        ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/MUX.v ;         ;
-; src/DMX.v                        ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/DMX.v ;         ;
-; src/CD.v                         ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/CD.v  ;         ;
-; src/DC.v                         ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/DC.v  ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; Main.v                           ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/Main.v          ;         ;
+; src/MUX.v                        ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/MUX.v       ;         ;
+; src/DMX.v                        ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/DMX.v       ;         ;
+; src/CD.v                         ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/CD.v        ;         ;
+; src/DC.v                         ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/DC.v        ;         ;
+; src/FullAdder.v                  ; yes             ; User Verilog HDL File  ; E:/projects/Laba1/CombDigitalDevices/src/FullAdder.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------+
@@ -183,44 +185,46 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 37            ;
+; Estimated Total logic elements              ; 39            ;
 ;                                             ;               ;
-; Total combinational functions               ; 37            ;
+; Total combinational functions               ; 39            ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 23            ;
+;     -- 4 input functions                    ; 24            ;
 ;     -- 3 input functions                    ; 12            ;
-;     -- <=2 input functions                  ; 2             ;
+;     -- <=2 input functions                  ; 3             ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 37            ;
+;     -- normal mode                          ; 39            ;
 ;     -- arithmetic mode                      ; 0             ;
 ;                                             ;               ;
 ; Total registers                             ; 0             ;
 ;     -- Dedicated logic registers            ; 0             ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 43            ;
+; I/O pins                                    ; 50            ;
 ;                                             ;               ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; addr[0]~input ;
 ; Maximum fan-out                             ; 11            ;
-; Total fan-out                               ; 195           ;
-; Average fan-out                             ; 1.59          ;
+; Total fan-out                               ; 211           ;
+; Average fan-out                             ; 1.52          ;
 +---------------------------------------------+---------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |Main                      ; 37 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 43   ; 0            ; 0          ; |Main               ; Main        ; work         ;
-;    |CD:cd|                 ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|CD:cd         ; CD          ; work         ;
-;    |DC:dc|                 ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|DC:dc         ; DC          ; work         ;
-;    |DMX:dmx|               ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|DMX:dmx       ; DMX         ; work         ;
-;    |MUX:mux|               ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|MUX:mux       ; MUX         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name        ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+-------------+--------------+
+; |Main                      ; 39 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 50   ; 0            ; 0          ; |Main                      ; Main        ; work         ;
+;    |CD:cd|                 ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|CD:cd                ; CD          ; work         ;
+;    |DC:dc|                 ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|DC:dc                ; DC          ; work         ;
+;    |DMX:dmx|               ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|DMX:dmx              ; DMX         ; work         ;
+;    |FullAdder:adder_bit0|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|FullAdder:adder_bit0 ; FullAdder   ; work         ;
+;    |FullAdder:adder_bit1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|FullAdder:adder_bit1 ; FullAdder   ; work         ;
+;    |MUX:mux|               ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|MUX:mux              ; MUX         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -252,20 +256,29 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------+
+; Port Connectivity Checks: "FullAdder:adder_bit0" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; c_in ; Input ; Info     ; Stuck at GND           ;
++------+-------+----------+------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 43                          ;
-; cycloneiii_lcell_comb ; 37                          ;
-;     normal            ; 37                          ;
-;         2 data inputs ; 2                           ;
+; boundary_port         ; 50                          ;
+; cycloneiii_lcell_comb ; 39                          ;
+;     normal            ; 39                          ;
+;         2 data inputs ; 3                           ;
 ;         3 data inputs ; 12                          ;
-;         4 data inputs ; 23                          ;
+;         4 data inputs ; 24                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.17                        ;
+; Average LUT depth     ; 2.04                        ;
 +-----------------------+-----------------------------+
 
 
@@ -274,7 +287,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -284,10 +297,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Apr 09 21:06:17 2019
+    Info: Processing started: Wed Apr 10 00:32:45 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CombDigitalDevices -c Main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning (10275): Verilog HDL Module Instantiation warning at Main.v(58): ignored dangling comma in List of Port Connections File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 58
+Warning (10275): Verilog HDL Module Instantiation warning at Main.v(66): ignored dangling comma in List of Port Connections File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 66
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
     Info (12023): Found entity 1: Main File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 1
 Warning (12090): Entity "MUX" obtained from "src/MUX.v" instead of from Quartus Prime megafunction library File: E:/projects/Laba1/CombDigitalDevices/src/MUX.v Line: 6
@@ -300,17 +315,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/cd.
     Info (12023): Found entity 1: CD File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file src/dc.v
     Info (12023): Found entity 1: DC File: E:/projects/Laba1/CombDigitalDevices/src/DC.v Line: 4
+Warning (12019): Can't analyze file -- file FullAdder.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file src/fulladder.v
+    Info (12023): Found entity 1: FullAdder File: E:/projects/Laba1/CombDigitalDevices/src/FullAdder.v Line: 8
 Info (12127): Elaborating entity "Main" for the top level hierarchy
-Info (12128): Elaborating entity "MUX" for hierarchy "MUX:mux" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 27
-Info (12128): Elaborating entity "DMX" for hierarchy "DMX:dmx" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 33
-Info (12128): Elaborating entity "CD" for hierarchy "CD:cd" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 38
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:mux" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 33
+Info (12128): Elaborating entity "DMX" for hierarchy "DMX:dmx" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 39
+Info (12128): Elaborating entity "CD" for hierarchy "CD:cd" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 44
 Warning (10270): Verilog HDL Case Statement warning at CD.v(18): incomplete case statement has no default case item File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 18
 Info (10264): Verilog HDL Case Statement information at CD.v(18): all case item expressions in this case statement are onehot File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 18
 Warning (10240): Verilog HDL Always Construct warning at CD.v(17): inferring latch(es) for variable "outData", which holds its previous value in one or more paths through the always construct File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 17
 Info (10041): Inferred latch for "outData[0]" at CD.v(17) File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 17
 Info (10041): Inferred latch for "outData[1]" at CD.v(17) File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 17
 Info (10041): Inferred latch for "outData[2]" at CD.v(17) File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 17
-Info (12128): Elaborating entity "DC" for hierarchy "DC:dc" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 43
+Info (12128): Elaborating entity "DC" for hierarchy "DC:dc" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 49
+Info (12128): Elaborating entity "FullAdder" for hierarchy "FullAdder:adder_bit0" File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 58
 Warning (13012): Latch CD:cd|outData[0] has unsafe behavior File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 17
     Warning (13013): Ports D and ENA on the latch are fed by the same signal CD_inData[1] File: E:/projects/Laba1/CombDigitalDevices/Main.v Line: 14
 Warning (13012): Latch CD:cd|outData[1] has unsafe behavior File: E:/projects/Laba1/CombDigitalDevices/src/CD.v Line: 17
@@ -320,14 +339,14 @@ Warning (13012): Latch CD:cd|outData[2] has unsafe behavior File: E:/projects/La
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 80 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 23 input pins
-    Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 37 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 622 megabytes
-    Info: Processing ended: Tue Apr 09 21:07:02 2019
-    Info: Elapsed time: 00:00:45
-    Info: Total CPU time (on all processors): 00:01:24
+Info (21057): Implemented 89 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 27 input pins
+    Info (21059): Implemented 23 output pins
+    Info (21061): Implemented 39 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 621 megabytes
+    Info: Processing ended: Wed Apr 10 00:33:31 2019
+    Info: Elapsed time: 00:00:46
+    Info: Total CPU time (on all processors): 00:01:25
 
 

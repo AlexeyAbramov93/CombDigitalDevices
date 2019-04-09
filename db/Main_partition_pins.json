@@ -84,6 +84,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "sum[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[1]",
+					"strict" : false
+				},
+				{
+					"name" : "c_out",
+					"strict" : false
+				},
+				{
 					"name" : "MUX_inData[5]",
 					"strict" : false
 				},
@@ -144,19 +156,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "CD_inData[0]",
+					"name" : "a[0]",
 					"strict" : false
 				},
 				{
-					"name" : "CD_inData[4]",
+					"name" : "b[0]",
 					"strict" : false
 				},
 				{
-					"name" : "CD_inData[2]",
+					"name" : "a[1]",
 					"strict" : false
 				},
 				{
-					"name" : "CD_inData[6]",
+					"name" : "b[1]",
 					"strict" : false
 				},
 				{
@@ -173,6 +185,22 @@
 				},
 				{
 					"name" : "CD_inData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CD_inData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CD_inData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CD_inData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "CD_inData[0]",
 					"strict" : false
 				}
 			]

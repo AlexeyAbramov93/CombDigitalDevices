@@ -3,7 +3,7 @@ $comment
 		vcd file CombDigitalDevices.msim.vcd -direction
 $end
 $date
-	Tue Apr 09 21:13:39 2019
+	Wed Apr 10 00:28:16 2019
 $end
 $version
 	ModelSim Version 10.5b
@@ -17,318 +17,354 @@ $var reg 8 ! CD_inData [7:0] $end
 $var reg 3 " DC_inData [2:0] $end
 $var reg 1 # DMX_inData $end
 $var reg 8 $ MUX_inData [7:0] $end
-$var reg 3 % addr [2:0] $end
-$var wire 1 & CD_outData [2] $end
-$var wire 1 ' CD_outData [1] $end
-$var wire 1 ( CD_outData [0] $end
-$var wire 1 ) DC_outData [7] $end
-$var wire 1 * DC_outData [6] $end
-$var wire 1 + DC_outData [5] $end
-$var wire 1 , DC_outData [4] $end
-$var wire 1 - DC_outData [3] $end
-$var wire 1 . DC_outData [2] $end
-$var wire 1 / DC_outData [1] $end
-$var wire 1 0 DC_outData [0] $end
-$var wire 1 1 DMX_outData [7] $end
-$var wire 1 2 DMX_outData [6] $end
-$var wire 1 3 DMX_outData [5] $end
-$var wire 1 4 DMX_outData [4] $end
-$var wire 1 5 DMX_outData [3] $end
-$var wire 1 6 DMX_outData [2] $end
-$var wire 1 7 DMX_outData [1] $end
-$var wire 1 8 DMX_outData [0] $end
-$var wire 1 9 MUX_outData $end
+$var reg 2 % a [1:0] $end
+$var reg 3 & addr [2:0] $end
+$var reg 2 ' b [1:0] $end
+$var wire 1 ( CD_outData [2] $end
+$var wire 1 ) CD_outData [1] $end
+$var wire 1 * CD_outData [0] $end
+$var wire 1 + DC_outData [7] $end
+$var wire 1 , DC_outData [6] $end
+$var wire 1 - DC_outData [5] $end
+$var wire 1 . DC_outData [4] $end
+$var wire 1 / DC_outData [3] $end
+$var wire 1 0 DC_outData [2] $end
+$var wire 1 1 DC_outData [1] $end
+$var wire 1 2 DC_outData [0] $end
+$var wire 1 3 DMX_outData [7] $end
+$var wire 1 4 DMX_outData [6] $end
+$var wire 1 5 DMX_outData [5] $end
+$var wire 1 6 DMX_outData [4] $end
+$var wire 1 7 DMX_outData [3] $end
+$var wire 1 8 DMX_outData [2] $end
+$var wire 1 9 DMX_outData [1] $end
+$var wire 1 : DMX_outData [0] $end
+$var wire 1 ; MUX_outData $end
+$var wire 1 < c_out $end
+$var wire 1 = sum [1] $end
+$var wire 1 > sum [0] $end
 
 $scope module i1 $end
-$var wire 1 : gnd $end
-$var wire 1 ; vcc $end
-$var wire 1 < unknown $end
-$var tri1 1 = devclrn $end
-$var tri1 1 > devpor $end
-$var tri1 1 ? devoe $end
-$var wire 1 @ ~QUARTUS_CREATED_GND~I_combout $end
-$var wire 1 A ~QUARTUS_CREATED_UNVM~~busy $end
-$var wire 1 B ~QUARTUS_CREATED_ADC1~~eoc $end
-$var wire 1 C ~QUARTUS_CREATED_ADC2~~eoc $end
-$var wire 1 D MUX_outData~output_o $end
-$var wire 1 E DMX_outData[0]~output_o $end
-$var wire 1 F DMX_outData[1]~output_o $end
-$var wire 1 G DMX_outData[2]~output_o $end
-$var wire 1 H DMX_outData[3]~output_o $end
-$var wire 1 I DMX_outData[4]~output_o $end
-$var wire 1 J DMX_outData[5]~output_o $end
-$var wire 1 K DMX_outData[6]~output_o $end
-$var wire 1 L DMX_outData[7]~output_o $end
-$var wire 1 M CD_outData[0]~output_o $end
-$var wire 1 N CD_outData[1]~output_o $end
-$var wire 1 O CD_outData[2]~output_o $end
-$var wire 1 P DC_outData[0]~output_o $end
-$var wire 1 Q DC_outData[1]~output_o $end
-$var wire 1 R DC_outData[2]~output_o $end
-$var wire 1 S DC_outData[3]~output_o $end
-$var wire 1 T DC_outData[4]~output_o $end
-$var wire 1 U DC_outData[5]~output_o $end
-$var wire 1 V DC_outData[6]~output_o $end
-$var wire 1 W DC_outData[7]~output_o $end
-$var wire 1 X addr[0]~input_o $end
-$var wire 1 Y MUX_inData[5]~input_o $end
-$var wire 1 Z MUX_inData[7]~input_o $end
-$var wire 1 [ addr[1]~input_o $end
-$var wire 1 \ MUX_inData[4]~input_o $end
-$var wire 1 ] MUX_inData[6]~input_o $end
-$var wire 1 ^ mux|Mux0~0_combout $end
-$var wire 1 _ mux|Mux0~1_combout $end
-$var wire 1 ` addr[2]~input_o $end
-$var wire 1 a MUX_inData[2]~input_o $end
+$var wire 1 ? gnd $end
+$var wire 1 @ vcc $end
+$var wire 1 A unknown $end
+$var tri1 1 B devclrn $end
+$var tri1 1 C devpor $end
+$var tri1 1 D devoe $end
+$var wire 1 E ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 F ~QUARTUS_CREATED_UNVM~~busy $end
+$var wire 1 G ~QUARTUS_CREATED_ADC1~~eoc $end
+$var wire 1 H ~QUARTUS_CREATED_ADC2~~eoc $end
+$var wire 1 I MUX_outData~output_o $end
+$var wire 1 J DMX_outData[0]~output_o $end
+$var wire 1 K DMX_outData[1]~output_o $end
+$var wire 1 L DMX_outData[2]~output_o $end
+$var wire 1 M DMX_outData[3]~output_o $end
+$var wire 1 N DMX_outData[4]~output_o $end
+$var wire 1 O DMX_outData[5]~output_o $end
+$var wire 1 P DMX_outData[6]~output_o $end
+$var wire 1 Q DMX_outData[7]~output_o $end
+$var wire 1 R CD_outData[0]~output_o $end
+$var wire 1 S CD_outData[1]~output_o $end
+$var wire 1 T CD_outData[2]~output_o $end
+$var wire 1 U DC_outData[0]~output_o $end
+$var wire 1 V DC_outData[1]~output_o $end
+$var wire 1 W DC_outData[2]~output_o $end
+$var wire 1 X DC_outData[3]~output_o $end
+$var wire 1 Y DC_outData[4]~output_o $end
+$var wire 1 Z DC_outData[5]~output_o $end
+$var wire 1 [ DC_outData[6]~output_o $end
+$var wire 1 \ DC_outData[7]~output_o $end
+$var wire 1 ] sum[0]~output_o $end
+$var wire 1 ^ sum[1]~output_o $end
+$var wire 1 _ c_out~output_o $end
+$var wire 1 ` MUX_inData[2]~input_o $end
+$var wire 1 a addr[1]~input_o $end
 $var wire 1 b MUX_inData[3]~input_o $end
-$var wire 1 c MUX_inData[1]~input_o $end
-$var wire 1 d MUX_inData[0]~input_o $end
-$var wire 1 e mux|Mux0~2_combout $end
-$var wire 1 f mux|Mux0~3_combout $end
-$var wire 1 g mux|Mux0~4_combout $end
-$var wire 1 h DMX_inData~input_o $end
-$var wire 1 i dmx|outData[0]~0_combout $end
-$var wire 1 j dmx|outData[1]~1_combout $end
-$var wire 1 k dmx|outData[2]~2_combout $end
-$var wire 1 l dmx|outData[3]~3_combout $end
-$var wire 1 m dmx|outData[4]~4_combout $end
-$var wire 1 n dmx|outData[5]~5_combout $end
-$var wire 1 o dmx|outData[6]~6_combout $end
-$var wire 1 p dmx|outData[7]~7_combout $end
-$var wire 1 q CD_inData[5]~input_o $end
-$var wire 1 r CD_inData[7]~input_o $end
-$var wire 1 s cd|WideOr6~1_combout $end
-$var wire 1 t CD_inData[1]~input_o $end
-$var wire 1 u CD_inData[4]~input_o $end
-$var wire 1 v CD_inData[6]~input_o $end
-$var wire 1 w CD_inData[0]~input_o $end
-$var wire 1 x CD_inData[2]~input_o $end
-$var wire 1 y cd|WideOr6~0_combout $end
-$var wire 1 z CD_inData[3]~input_o $end
-$var wire 1 { cd|WideOr6~2_combout $end
-$var wire 1 | cd|WideOr0~3_combout $end
-$var wire 1 } cd|WideOr0~2_combout $end
-$var wire 1 ~ cd|WideOr0~1_combout $end
-$var wire 1 !! cd|WideOr0~0_combout $end
-$var wire 1 "! cd|WideOr0~4_combout $end
-$var wire 1 #! cd|WideOr0~4clkctrl_outclk $end
-$var wire 1 $! cd|WideOr4~1_combout $end
-$var wire 1 %! cd|WideOr4~0_combout $end
-$var wire 1 &! cd|WideOr4~2_combout $end
-$var wire 1 '! cd|WideOr2~0_combout $end
-$var wire 1 (! cd|WideOr2~1_combout $end
-$var wire 1 )! DC_inData[1]~input_o $end
-$var wire 1 *! DC_inData[0]~input_o $end
-$var wire 1 +! DC_inData[2]~input_o $end
-$var wire 1 ,! dc|Decoder0~0_combout $end
-$var wire 1 -! dc|Decoder0~1_combout $end
-$var wire 1 .! dc|Decoder0~2_combout $end
-$var wire 1 /! dc|Decoder0~3_combout $end
-$var wire 1 0! dc|Decoder0~4_combout $end
-$var wire 1 1! dc|Decoder0~5_combout $end
-$var wire 1 2! dc|Decoder0~6_combout $end
-$var wire 1 3! dc|Decoder0~7_combout $end
-$var wire 1 4! cd|outData [2] $end
-$var wire 1 5! cd|outData [1] $end
-$var wire 1 6! cd|outData [0] $end
+$var wire 1 c addr[0]~input_o $end
+$var wire 1 d MUX_inData[1]~input_o $end
+$var wire 1 e MUX_inData[0]~input_o $end
+$var wire 1 f mux|Mux0~2_combout $end
+$var wire 1 g mux|Mux0~3_combout $end
+$var wire 1 h addr[2]~input_o $end
+$var wire 1 i MUX_inData[7]~input_o $end
+$var wire 1 j MUX_inData[5]~input_o $end
+$var wire 1 k MUX_inData[4]~input_o $end
+$var wire 1 l MUX_inData[6]~input_o $end
+$var wire 1 m mux|Mux0~0_combout $end
+$var wire 1 n mux|Mux0~1_combout $end
+$var wire 1 o mux|Mux0~4_combout $end
+$var wire 1 p DMX_inData~input_o $end
+$var wire 1 q dmx|outData[0]~0_combout $end
+$var wire 1 r dmx|outData[1]~1_combout $end
+$var wire 1 s dmx|outData[2]~2_combout $end
+$var wire 1 t dmx|outData[3]~3_combout $end
+$var wire 1 u dmx|outData[4]~4_combout $end
+$var wire 1 v dmx|outData[5]~5_combout $end
+$var wire 1 w dmx|outData[6]~6_combout $end
+$var wire 1 x dmx|outData[7]~7_combout $end
+$var wire 1 y CD_inData[1]~input_o $end
+$var wire 1 z CD_inData[7]~input_o $end
+$var wire 1 { CD_inData[5]~input_o $end
+$var wire 1 | cd|WideOr6~0_combout $end
+$var wire 1 } CD_inData[3]~input_o $end
+$var wire 1 ~ CD_inData[6]~input_o $end
+$var wire 1 !! CD_inData[4]~input_o $end
+$var wire 1 "! CD_inData[2]~input_o $end
+$var wire 1 #! CD_inData[0]~input_o $end
+$var wire 1 $! cd|WideOr6~1_combout $end
+$var wire 1 %! cd|WideOr6~2_combout $end
+$var wire 1 &! cd|WideOr0~3_combout $end
+$var wire 1 '! cd|WideOr0~2_combout $end
+$var wire 1 (! cd|WideOr0~0_combout $end
+$var wire 1 )! cd|WideOr0~1_combout $end
+$var wire 1 *! cd|WideOr0~4_combout $end
+$var wire 1 +! cd|WideOr0~4clkctrl_outclk $end
+$var wire 1 ,! cd|WideOr4~1_combout $end
+$var wire 1 -! cd|WideOr4~0_combout $end
+$var wire 1 .! cd|WideOr4~2_combout $end
+$var wire 1 /! cd|WideOr2~0_combout $end
+$var wire 1 0! DC_inData[1]~input_o $end
+$var wire 1 1! DC_inData[0]~input_o $end
+$var wire 1 2! DC_inData[2]~input_o $end
+$var wire 1 3! dc|Decoder0~0_combout $end
+$var wire 1 4! dc|Decoder0~1_combout $end
+$var wire 1 5! dc|Decoder0~2_combout $end
+$var wire 1 6! dc|Decoder0~3_combout $end
+$var wire 1 7! dc|Decoder0~4_combout $end
+$var wire 1 8! dc|Decoder0~5_combout $end
+$var wire 1 9! dc|Decoder0~6_combout $end
+$var wire 1 :! dc|Decoder0~7_combout $end
+$var wire 1 ;! b[0]~input_o $end
+$var wire 1 <! a[0]~input_o $end
+$var wire 1 =! adder_bit0|sum~0_combout $end
+$var wire 1 >! b[1]~input_o $end
+$var wire 1 ?! a[1]~input_o $end
+$var wire 1 @! adder_bit1|sum~combout $end
+$var wire 1 A! adder_bit1|c_out~combout $end
+$var wire 1 B! cd|outData [2] $end
+$var wire 1 C! cd|outData [1] $end
+$var wire 1 D! cd|outData [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b0 !
-b101 "
-0#
-b0 $
-b0 %
+bx !
+bx "
+x#
+bx $
+b1 %
+bx &
+b1 '
+x*
+x)
 x(
-x'
-x&
-00
-0/
-0.
-0-
-0,
-1+
-0*
-0)
-08
-07
-06
-05
-04
-03
-02
-01
-09
-0:
-1;
-x<
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x;
+0<
+0>
 1=
-1>
-1?
-0@
-zA
-zB
-zC
-0D
+0?
+1@
+xA
+1B
+1C
+1D
 0E
-0F
-0G
-0H
-0I
-0J
-0K
-0L
+zF
+zG
+zH
+xI
+xJ
+xK
+xL
 xM
 xN
 xO
-0P
-0Q
-0R
-0S
-0T
-1U
-0V
-0W
-0X
-0Y
-0Z
-0[
-0\
+xP
+xQ
+xR
+xS
+xT
+xU
+xV
+xW
+xX
+xY
+xZ
+x[
+x\
 0]
-0^
+1^
 0_
-0`
-0a
-0b
-0c
-0d
-0e
-0f
-0g
-0h
-0i
-0j
-0k
-0l
-0m
-0n
-0o
-0p
-0q
-0r
-1s
-0t
-0u
-0v
-0w
-0x
-0y
-0z
-0{
-0|
-0}
-0~
-0!!
-0"!
-0#!
-1$!
-0%!
-0&!
-0'!
-0(!
-0)!
-1*!
-1+!
-0,!
-0-!
-0.!
-0/!
-00!
-11!
-02!
-03!
-x6!
-x5!
+x`
+xa
+xb
+xc
+xd
+xe
+xf
+xg
+xh
+xi
+xj
+xk
+xl
+xm
+xn
+xo
+xp
+xq
+xr
+xs
+xt
+xu
+xv
+xw
+xx
+xy
+xz
+x{
+x|
+x}
+x~
+x!!
+x"!
+x#!
+x$!
+x%!
+x&!
+x'!
+x(!
+x)!
+x*!
+x+!
+x,!
+x-!
+x.!
+x/!
+x0!
+x1!
+x2!
+x3!
 x4!
+x5!
+x6!
+x7!
+x8!
+x9!
+x:!
+1;!
+1<!
+0=!
+0>!
+0?!
+1@!
+0A!
+xD!
+xC!
+xB!
 $end
-#120000
-b111 "
-1)!
-13!
-01!
-0U
-1W
-1)
-0+
-#240000
-b110 "
-0*!
-03!
-12!
-1V
-0W
-0)
-1*
-#360000
-b100 "
-0)!
-02!
-10!
-1T
-0V
-0*
-1,
-#480000
-b101 "
-1*!
-11!
-00!
-0T
-1U
-1+
-0,
+#100000
+b0 %
+b11 '
+b10 '
+0<!
+1>!
+0;!
+#200000
+b0 '
+0>!
+0@!
+0^
+0=
+#300000
+b10 %
+b11 %
+b1 '
+1?!
+1<!
+1;!
+1A!
+1_
+1<
+#400000
+b1 %
+b0 %
+0?!
+0<!
+0A!
+1=!
+1]
+0_
+0<
+1>
+#500000
+b0 '
+b10 %
+b11 %
+0;!
+1?!
+1<!
+1@!
+1^
+1=
 #600000
-b111 "
-b110 "
-1)!
-0*!
-12!
-01!
-0U
-1V
-1*
-0+
-#720000
-b10 "
-b0 "
-0+!
-0)!
-02!
-1,!
-1P
-0V
-0*
-10
-#840000
-b10 "
-1)!
-1.!
-0,!
-0P
-1R
-1.
-00
-#960000
-b11 "
-b1 "
-0)!
-1*!
-0.!
-1-!
-1Q
-0R
-0.
-1/
+b10 '
+b11 '
+1>!
+1;!
+1A!
+0=!
+0]
+1_
+1<
+0>
+#700000
+b1 '
+b0 '
+0>!
+0;!
+0A!
+1=!
+1]
+0_
+0<
+1>
+#800000
+b1 %
+b0 %
+b10 '
+0?!
+0<!
+1>!
+0=!
+0]
+0>
+#900000
+b10 %
+b11 %
+b0 '
+1?!
+1<!
+0>!
+1=!
+1]
+1>
 #1000000

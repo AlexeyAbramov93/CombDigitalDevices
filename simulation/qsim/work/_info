@@ -9,21 +9,21 @@ z2
 cModel Technology
 Z0 dE:/projects/Laba1/CombDigitalDevices/simulation/qsim
 vhard_block
-Z1 !s110 1554833617
+Z1 !s110 1554845295
 !i10b 1
-!s100 Do6OUGa;ndGFOaRRel:`g0
-I<ClejJbVWUNC2D:YO^REF1
+!s100 C2ObCz>Q7W]deHJfWJbgN0
+IWhKY0lDW3_z1I4Yd<;1EQ0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1554833614
+Z3 w1554845291
 Z4 8Main.vo
 Z5 FMain.vo
-L0 1524
+L0 1672
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1554833617.000000
+Z7 !s108 1554845295.000000
 Z8 !s107 Main.vo|
 Z9 !s90 -work|work|Main.vo|
 !i113 1
@@ -32,8 +32,8 @@ Z11 tCvgOpt 0
 vMain
 R1
 !i10b 1
-!s100 :h87=XYEeXQmPjdDzDLhn0
-Ic6E6A2X@=5<U=g3PIEmg52
+!s100 DZJLRYo:cladz:g<AJK^g3
+IJ@R8K`cXOgR8W]keTHbKC3
 R2
 R0
 R3
@@ -54,21 +54,21 @@ n@main
 vMain_vlg_vec_tst
 R1
 !i10b 1
-!s100 m`R1;G9JJZEzR>6=WNG8@0
-IHB^j1cXZfT:zJIWklGe<53
+!s100 7gEE<=61B[JOh?14A<goW3
+I]if?jLY=E_XPBI65aUSkP2
 R2
 R0
-w1554833610
-8Waveform6.vwf.vt
-FWaveform6.vwf.vt
+w1554845287
+8Waveform7.vwf.vt
+FWaveform7.vwf.vt
 L0 29
 R6
 r1
 !s85 0
 31
 R7
-!s107 Waveform6.vwf.vt|
-!s90 -work|work|Waveform6.vwf.vt|
+!s107 Waveform7.vwf.vt|
+!s90 -work|work|Waveform7.vwf.vt|
 !i113 1
 R10
 R11

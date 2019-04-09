@@ -1,26 +1,26 @@
 # do CombDigitalDevices.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:13:37 on Apr 09,2019
+# Start time: 00:28:15 on Apr 10,2019
 # vlog -work work Main.vo 
 # -- Compiling module Main
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	Main
-# End time: 21:13:37 on Apr 09,2019, Elapsed time: 0:00:00
+# End time: 00:28:15 on Apr 10,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:13:37 on Apr 09,2019
-# vlog -work work Waveform6.vwf.vt 
+# Start time: 00:28:15 on Apr 10,2019
+# vlog -work work Waveform7.vwf.vt 
 # -- Compiling module Main_vlg_vec_tst
 # 
 # Top level modules:
 # 	Main_vlg_vec_tst
-# End time: 21:13:37 on Apr 09,2019, Elapsed time: 0:00:00
+# End time: 00:28:15 on Apr 10,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Main_vlg_vec_tst 
-# Start time: 21:13:38 on Apr 09,2019
+# Start time: 00:28:16 on Apr 10,2019
 # Loading work.Main_vlg_vec_tst
 # Loading work.Main
 # Loading work.hard_block
@@ -32,14 +32,14 @@
 # Loading fiftyfivenm_ver.fiftyfivenm_ena_reg
 # Loading fiftyfivenm_ver.fiftyfivenm_unvm
 # Loading fiftyfivenm_ver.fiftyfivenm_adcblock
-# ** Warning: (vsim-3017) Main.vo(1437): [TFMPC] - Too few port connections. Expected 8, found 7.
+# ** Warning: (vsim-3017) Main.vo(1579): [TFMPC] - Too few port connections. Expected 8, found 7.
 #    Time: 0 ps  Iteration: 0  Instance: /Main_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC1~  File: /build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/fiftyfivenm_atoms.v
-# ** Warning: (vsim-3722) Main.vo(1437): [TFMPC] - Missing connection for port 'clk_dft'.
-# ** Warning: (vsim-3017) Main.vo(1460): [TFMPC] - Too few port connections. Expected 8, found 7.
+# ** Warning: (vsim-3722) Main.vo(1579): [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Warning: (vsim-3017) Main.vo(1602): [TFMPC] - Too few port connections. Expected 8, found 7.
 #    Time: 0 ps  Iteration: 0  Instance: /Main_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC2~  File: /build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/fiftyfivenm_atoms.v
-# ** Warning: (vsim-3722) Main.vo(1460): [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Warning: (vsim-3722) Main.vo(1602): [TFMPC] - Missing connection for port 'clk_dft'.
 # after#26
-# ** Note: $finish    : Waveform6.vwf.vt(58)
+# ** Note: $finish    : Waveform7.vwf.vt(66)
 #    Time: 1 us  Iteration: 0  Instance: /Main_vlg_vec_tst
-# End time: 21:13:39 on Apr 09,2019, Elapsed time: 0:00:01
+# End time: 00:28:17 on Apr 10,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 4
