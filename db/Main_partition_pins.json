@@ -52,6 +52,38 @@
 					"strict" : false
 				},
 				{
+					"name" : "DC_outData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DC_outData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DC_outData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DC_outData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DC_outData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DC_outData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DC_outData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DC_outData[7]",
+					"strict" : false
+				},
+				{
 					"name" : "MUX_inData[5]",
 					"strict" : false
 				},
@@ -97,6 +129,18 @@
 				},
 				{
 					"name" : "DMX_inData",
+					"strict" : false
+				},
+				{
+					"name" : "DC_inData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DC_inData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DC_inData[1]",
 					"strict" : false
 				},
 				{

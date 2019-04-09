@@ -12,7 +12,11 @@ output	[7:0]	DMX_outData,
 
 //Сигнальные выводы шифратора 
 input		[7:0]	CD_inData,
-output	[2:0]	CD_outData
+output	[2:0]	CD_outData,
+
+//Сигнальные выводы дешифратора 
+input		[2:0]	DC_inData,
+output	[7:0]	DC_outData
 
 );
 
@@ -31,6 +35,11 @@ DMX dmx(
 CD cd(
 	.inData(CD_inData),
 	.outData(CD_outData)
+);
+
+DC dc(
+	.inData(DC_inData),
+	.outData(DC_outData)
 );
 
 endmodule

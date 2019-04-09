@@ -31,6 +31,17 @@ CD_inData[7] => CD_inData[7].IN1
 CD_outData[0] << CD:cd.outData
 CD_outData[1] << CD:cd.outData
 CD_outData[2] << CD:cd.outData
+DC_inData[0] => DC_inData[0].IN1
+DC_inData[1] => DC_inData[1].IN1
+DC_inData[2] => DC_inData[2].IN1
+DC_outData[0] << DC:dc.outData
+DC_outData[1] << DC:dc.outData
+DC_outData[2] << DC:dc.outData
+DC_outData[3] << DC:dc.outData
+DC_outData[4] << DC:dc.outData
+DC_outData[5] << DC:dc.outData
+DC_outData[6] << DC:dc.outData
+DC_outData[7] << DC:dc.outData
 
 
 |Main|MUX:mux
@@ -90,5 +101,19 @@ inData[7] => Decoder0.IN0
 outData[0] <= outData[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 outData[1] <= outData[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
 outData[2] <= outData[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DC:dc
+inData[0] => Decoder0.IN2
+inData[1] => Decoder0.IN1
+inData[2] => Decoder0.IN0
+outData[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outData[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outData[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outData[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outData[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outData[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outData[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outData[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 
 
