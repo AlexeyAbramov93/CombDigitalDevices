@@ -3,7 +3,7 @@ $comment
 		vcd file CombDigitalDevices.msim.vcd -direction
 $end
 $date
-	Wed Apr 10 00:28:16 2019
+	Wed Apr 10 01:10:24 2019
 $end
 $version
 	ModelSim Version 10.5b
@@ -127,14 +127,14 @@ $var wire 1 /! cd|WideOr2~0_combout $end
 $var wire 1 0! DC_inData[1]~input_o $end
 $var wire 1 1! DC_inData[0]~input_o $end
 $var wire 1 2! DC_inData[2]~input_o $end
-$var wire 1 3! dc|Decoder0~0_combout $end
-$var wire 1 4! dc|Decoder0~1_combout $end
-$var wire 1 5! dc|Decoder0~2_combout $end
-$var wire 1 6! dc|Decoder0~3_combout $end
-$var wire 1 7! dc|Decoder0~4_combout $end
-$var wire 1 8! dc|Decoder0~5_combout $end
-$var wire 1 9! dc|Decoder0~6_combout $end
-$var wire 1 :! dc|Decoder0~7_combout $end
+$var wire 1 3! dc|ShiftLeft0~0_combout $end
+$var wire 1 4! dc|ShiftLeft0~1_combout $end
+$var wire 1 5! dc|ShiftLeft0~2_combout $end
+$var wire 1 6! dc|ShiftLeft0~3_combout $end
+$var wire 1 7! dc|ShiftLeft0~4_combout $end
+$var wire 1 8! dc|ShiftLeft0~5_combout $end
+$var wire 1 9! dc|ShiftLeft0~6_combout $end
+$var wire 1 :! dc|ShiftLeft0~7_combout $end
 $var wire 1 ;! b[0]~input_o $end
 $var wire 1 <! a[0]~input_o $end
 $var wire 1 =! adder_bit0|sum~0_combout $end
@@ -151,23 +151,23 @@ $enddefinitions $end
 #0
 $dumpvars
 bx !
-bx "
+b11 "
 x#
 bx $
-b1 %
+bx %
 bx &
-b1 '
+bx '
 x*
 x)
 x(
-x2
-x1
-x0
-x/
-x.
-x-
-x,
-x+
+02
+01
+00
+1/
+0.
+0-
+0,
+0+
 x:
 x9
 x8
@@ -177,9 +177,9 @@ x5
 x4
 x3
 x;
-0<
-0>
-1=
+x<
+x>
+x=
 0?
 1@
 xA
@@ -202,17 +202,17 @@ xQ
 xR
 xS
 xT
-xU
-xV
-xW
-xX
-xY
-xZ
-x[
-x\
-0]
-1^
-0_
+0U
+0V
+0W
+1X
+0Y
+0Z
+0[
+0\
+x]
+x^
+x_
 x`
 xa
 xb
@@ -259,112 +259,124 @@ x,!
 x-!
 x.!
 x/!
-x0!
-x1!
-x2!
-x3!
-x4!
-x5!
-x6!
-x7!
-x8!
-x9!
-x:!
-1;!
-1<!
-0=!
-0>!
-0?!
-1@!
-0A!
+10!
+11!
+02!
+13!
+04!
+15!
+16!
+17!
+08!
+19!
+0:!
+x;!
+x<!
+x=!
+x>!
+x?!
+x@!
+xA!
 xD!
 xC!
 xB!
 $end
-#100000
-b0 %
-b11 '
-b10 '
-0<!
-1>!
-0;!
-#200000
-b0 '
-0>!
-0@!
-0^
-0=
-#300000
-b10 %
-b11 %
-b1 '
-1?!
-1<!
-1;!
-1A!
-1_
-1<
-#400000
-b1 %
-b0 %
-0?!
-0<!
-0A!
-1=!
-1]
-0_
-0<
-1>
-#500000
-b0 '
-b10 %
-b11 %
-0;!
-1?!
-1<!
-1@!
-1^
-1=
-#600000
-b10 '
-b11 '
-1>!
-1;!
-1A!
-0=!
-0]
-1_
-1<
-0>
-#700000
-b1 '
-b0 '
-0>!
-0;!
-0A!
-1=!
-1]
-0_
-0<
-1>
-#800000
-b1 %
-b0 %
-b10 '
-0?!
-0<!
-1>!
-0=!
-0]
-0>
+#90000
+b1 "
+b0 "
+00!
+01!
+03!
+06!
+0X
+1U
+12
+0/
+#270000
+b100 "
+b101 "
+12!
+11!
+13!
+18!
+1Z
+0U
+02
+1-
+#360000
+b100 "
+01!
+07!
+08!
+0Z
+1Y
+1.
+0-
+#450000
+b110 "
+10!
+09!
+17!
+0Y
+1[
+1,
+0.
+#540000
+b10 "
+b0 "
+02!
+00!
+19!
+03!
+1U
+0[
+0,
+12
+#630000
+b1 "
+11!
+13!
+14!
+1V
+0U
+02
+11
+#720000
+b101 "
+b111 "
+12!
+10!
+1:!
+04!
+0V
+1\
+1+
+01
+#810000
+b101 "
+00!
+0:!
+18!
+1Z
+0\
+0+
+1-
 #900000
-b10 %
-b11 %
-b0 '
-1?!
-1<!
-0>!
-1=!
-1]
-1>
+b111 "
+10!
+1:!
+08!
+0Z
+1\
+1+
+0-
+#990000
+b110 "
+01!
+09!
+0:!
+0\
+1[
+1,
+0+
 #1000000

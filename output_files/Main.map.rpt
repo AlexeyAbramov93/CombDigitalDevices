@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Main
-Wed Apr 10 00:33:31 2019
+Wed Apr 10 01:07:37 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 10 00:33:30 2019       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 10 01:07:37 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Main                                        ;
 ; Top-level Entity Name              ; Main                                        ;
@@ -271,14 +271,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 50                          ;
-; cycloneiii_lcell_comb ; 39                          ;
-;     normal            ; 39                          ;
+; cycloneiii_lcell_comb ; 43                          ;
+;     normal            ; 43                          ;
+;         1 data inputs ; 4                           ;
 ;         2 data inputs ; 3                           ;
 ;         3 data inputs ; 12                          ;
 ;         4 data inputs ; 24                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.04                        ;
+; Average LUT depth     ; 2.14                        ;
 +-----------------------+-----------------------------+
 
 
@@ -287,7 +288,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -297,7 +298,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Apr 10 00:32:45 2019
+    Info: Processing started: Wed Apr 10 01:06:40 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CombDigitalDevices -c Main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -344,9 +345,9 @@ Info (21057): Implemented 89 device resources after synthesis - the final resour
     Info (21059): Implemented 23 output pins
     Info (21061): Implemented 39 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 621 megabytes
-    Info: Processing ended: Wed Apr 10 00:33:31 2019
-    Info: Elapsed time: 00:00:46
-    Info: Total CPU time (on all processors): 00:01:25
+    Info: Peak virtual memory: 622 megabytes
+    Info: Processing ended: Wed Apr 10 01:07:37 2019
+    Info: Elapsed time: 00:00:57
+    Info: Total CPU time (on all processors): 00:01:31
 
 

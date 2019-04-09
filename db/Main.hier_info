@@ -111,17 +111,17 @@ outData[2] <= outData[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|DC:dc
-inData[0] => Decoder0.IN2
-inData[1] => Decoder0.IN1
-inData[2] => Decoder0.IN0
-outData[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-outData[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-outData[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-outData[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-outData[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-outData[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-outData[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-outData[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+inData[0] => ShiftLeft0.IN11
+inData[1] => ShiftLeft0.IN10
+inData[2] => ShiftLeft0.IN9
+outData[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+outData[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+outData[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+outData[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+outData[4] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+outData[5] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+outData[6] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+outData[7] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|FullAdder:adder_bit0
