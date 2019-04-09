@@ -4,11 +4,43 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "outData",
+					"name" : "MUX_outData",
 					"strict" : false
 				},
 				{
-					"name" : "inData[5]",
+					"name" : "DMX_outData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DMX_outData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DMX_outData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DMX_outData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DMX_outData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DMX_outData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DMX_outData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DMX_outData[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_inData[5]",
 					"strict" : false
 				},
 				{
@@ -16,7 +48,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "inData[6]",
+					"name" : "MUX_inData[6]",
 					"strict" : false
 				},
 				{
@@ -24,31 +56,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "inData[4]",
+					"name" : "MUX_inData[4]",
 					"strict" : false
 				},
 				{
-					"name" : "inData[7]",
+					"name" : "MUX_inData[7]",
 					"strict" : false
 				},
 				{
-					"name" : "inData[2]",
+					"name" : "MUX_inData[2]",
 					"strict" : false
 				},
 				{
-					"name" : "inData[1]",
+					"name" : "MUX_inData[1]",
 					"strict" : false
 				},
 				{
-					"name" : "inData[0]",
+					"name" : "MUX_inData[0]",
 					"strict" : false
 				},
 				{
-					"name" : "inData[3]",
+					"name" : "MUX_inData[3]",
 					"strict" : false
 				},
 				{
 					"name" : "addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DMX_inData",
 					"strict" : false
 				}
 			]
