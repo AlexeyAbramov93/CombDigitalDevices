@@ -2,7 +2,56 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "outData",
+					"strict" : false
+				},
+				{
+					"name" : "inData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "inData[7]",
+					"strict" : false
+				},
+				{
+					"name" : "inData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[2]",
+					"strict" : false
+				}
+			]
 		}
 	]
 }
